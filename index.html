@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FURIA CS - Chat para Fãs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-zinc-800 p-4 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">FURIA CS</h1>
+      <nav class="space-x-4">
+        <a href="#sobre" class="hover:underline">Sobre</a>
+        <a href="#jogadores" class="hover:underline">Jogadores</a>
+        <a href="#chat" class="hover:underline">Chat</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-16 bg-zinc-950">
+    <h2 class="text-4xl font-bold mb-4">Bem-vindo à Fúria!</h2>
+    <p class="text-lg text-gray-300 mb-6">Aqui os fãs de Counter-Strike se conectam com o time.</p>
+    <a href="#chat" class="bg-yellow-400 text-zinc-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
+      Fale com o Chatbot
+    </a>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="max-w-5xl mx-auto py-12 px-4">
+    <h3 class="text-3xl font-semibold mb-4">Sobre a FURIA</h3>
+    <p class="text-gray-300">
+      A FURIA é um dos principais times brasileiros de Counter-Strike, conhecido pelo estilo agressivo e grandes atuações internacionais.
+    </p>
+  </section>
+
+  <!-- Jogadores -->
+  <section id="jogadores" class="max-w-5xl mx-auto py-12 px-4">
+    <h3 class="text-3xl font-semibold mb-8">Elenco Atual</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-zinc-800 p-4 rounded-xl text-center">
+        <p class="text-xl font-bold">Kaike "KSCERATO"</p>
+        <p class="text-gray-400">Rifler</p>
+      </div>
+      <div class="bg-zinc-800 p-4 rounded-xl text-center">
+        <p class="text-xl font-bold">Yuri "yuurih"</p>
+        <p class="text-gray-400">Rifler</p>
+      </div>
+      <!-- Adicione mais jogadores aqui -->
+    </div>
+  </section>
+
+  <!-- Chatbot -->
+  <section id="chat" class="bg-zinc-800 py-12 px-4 text-center">
+    <h3 class="text-3xl font-semibold mb-4">Chat com a FURIA</h3>
+    <p class="text-gray-300 mb-6">Interaja com nosso bot para saber mais sobre o time!</p>
+    <!-- Aqui vai o componente do chatbot futuramente -->
+    <div class="bg-zinc-900 p-4 rounded-xl border border-zinc-700 max-w-xl mx-auto">
+        <div id="chatbox" class="h-60 overflow-y-auto mb-4 p-2 bg-zinc-800 rounded text-left text-sm space-y-2">
+          <div class="text-gray-400">🤖 Bot: Olá! Sou o bot da FURIA. Pergunte algo!</div>
+        </div>
+        <div class="flex gap-2">
+          <input id="userInput" type="text" placeholder="Digite sua pergunta..." 
+                 class="flex-1 px-3 py-2 rounded bg-zinc-700 text-white placeholder-gray-400 focus:outline-none">
+          <button onclick="sendMessage()" 
+                  class="bg-yellow-400 text-zinc-900 px-4 py-2 rounded hover:bg-yellow-300 font-semibold">Enviar</button>
+        </div>
+      </div>
+      
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-zinc-900 text-center text-gray-400 py-6">
+    <p>© 2025 FURIA CS Fan Chat • Projeto fictício</p>
+    <div class="mt-2 space-x-4">
+      <a href="#" class="hover:underline">Twitter</a>
+      <a href="#" class="hover:underline">Instagram</a>
+      <a href="#" class="hover:underline">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    input.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") sendMessage();
+      });
+    
+  </script>
+
+</body>
+</html>
